@@ -1,6 +1,6 @@
-# Future News App Store pages
+# Farlight News App Store pages
 
-This repository hosts the public support, privacy policy, and marketing pages for Future News on GitHub Pages.
+This repository hosts the public support, privacy policy, and marketing pages for Farlight News on GitHub Pages.
 
 | App Store Connect field | URL |
 | --- | --- |
