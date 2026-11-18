@@ -1,0 +1,39 @@
+:root {
+  color-scheme: light;
+  --paper: #f8f6ef;
+  --ink: #142135;
+  --accent: #234b70;
+  --line: #cfcabe;
+  --muted: #505968;
+  font: 16px/1.55 system-ui, sans-serif;
+}
+* { box-sizing: border-box; }
+body { margin: 0; color: var(--ink); background: var(--paper); }
+a { color: var(--accent); text-underline-offset: .18em; }
+a:hover { text-decoration-thickness: 2px; }
+a:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+.shell { width: min(1050px, 100% - 40px); margin-inline: auto; }
+.masthead { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px 24px; padding: 15px 0; border-bottom: 2px solid var(--ink); }
+.brand { font: 700 29px/1 Georgia, serif; letter-spacing: -.04em; text-decoration: none; color: var(--ink); }
+nav { display: flex; gap: 20px; }
+nav a { display: inline-flex; align-items: center; min-height: 44px; font-size: .92rem; font-weight: 650; }
+nav a[aria-current=page] { color: var(--ink); }
+h1, h2 { font-family: Georgia, serif; line-height: 1.1; letter-spacing: -.035em; }
+h1 { font-size: clamp(2.95rem, 7.5vw, 6.25rem); margin: 0; text-wrap: balance; }
+h2 { font-size: clamp(1.34rem, 2.8vw, 1.85rem); margin: 0 0 .45rem; }
+p { margin: 0 0 1rem; }
+.hero { display: grid; grid-template-columns: minmax(0, 2.1fr) minmax(0, 1fr); gap: clamp(35px, 7vw, 100px); padding: clamp(57px, 10vw, 105px) 0 clamp(45px, 7vw, 78px); }
+.eyebrow { color: #883d29; font-size: .78rem; font-weight: 750; letter-spacing: .09em; text-transform: uppercase; margin-bottom: 13px; }
+.lede { font: 400 clamp(1.15rem, 2.8vw, 1.45rem)/1.48 Georgia, serif; max-width: 51ch; color: #364356; margin: 20px 0; }
+.action { display: inline-flex; align-items: center; gap: 12px; min-height: 46px; padding: 10px 16px; color: var(--paper); background: var(--ink); font-weight: 650; }
+.action:hover { background: var(--accent); }
+.front-notes { align-self: start; border-top: 2px solid var(--ink); }
+.front-notes div { padding: 15px 0; border-bottom: 1px solid var(--line); }
+.front-notes p { margin: 0; color: var(--muted); }
+.caption { color: var(--muted); font-size: .875rem; }
+.reading { max-width: 720px; padding: clamp(35px, 7vw, 74px) 0; }
+.reading h1 { font-size: clamp(2.8rem, 7vw, 5rem); }
+.reading h2 { margin-top: 1.8rem; }
+.footer { border-top: 1px solid var(--line); display: flex; flex-wrap: wrap; gap: 12px 22px; padding: 14px 0 28px; color: var(--muted); font-size: .87rem; }
+.footer span { margin-right: auto; }
+@media (max-width: 760px) { .hero { grid-template-columns: 1fr; } }
